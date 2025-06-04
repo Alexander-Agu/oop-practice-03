@@ -1,7 +1,7 @@
 package model;
 
 public class Appointment {
-    private int appont = 0;
+    private static int appont = 0;
     private String appointmentId;
     private Patient patient;
     private Doctor doctor;

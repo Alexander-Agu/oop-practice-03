@@ -10,6 +10,7 @@ public class Patient extends Person{
     public Patient(String name, int age) {
         super(name);
         this.age = age;
+        history = new ArrayList<>();
     }
 
     @Override

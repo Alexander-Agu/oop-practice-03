@@ -59,6 +59,16 @@ public class HospitalService {
         }
     }
 
+    public void viewDoctor(String doctorID){
+        Doctor doctor = findDoctor(doctorID);
+
+        if (doctor != null){
+            doctor.displayInfo();
+        }else {
+            System.out.println("Doctor not found");
+        }
+    }
+
 
     public void listPatients(){
         if(!patients.isEmpty()){
