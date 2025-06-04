@@ -22,10 +22,29 @@ public class Appointment {
     }
 
     public void displayInfo(){
-        System.out.println(patient.getName() + " appointment info".toUpperCase());
         System.out.println("Patient: " + patient.getName());
         System.out.println("Doctor: " + doctor.getName());
         System.out.println("Date: " + dateTime);
         System.out.println("Is Completed: " + (isCompleted? "Yes": "No"));
+    }
+
+    public String getAppointmentId() {
+        return appointmentId;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
     }
 }
